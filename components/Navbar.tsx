@@ -70,7 +70,7 @@ const Navbar = () => {
                                 )
                             }
                         </Menu.Button>
-                        <Menu.Items className="flex flex-col gap-3 bg-[#003BF9] z-10 top-12 p-6 rounded-xl w-56 text-white absolute right-5">
+                        <Menu.Items className="flex flex-col gap-3 bg-[#003BF9] z-20 top-12 p-6 rounded-xl w-56 text-white absolute right-5">
                             {
                                 NavLinks.map((item) => (
                                     <Menu.Item
