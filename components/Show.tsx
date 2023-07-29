@@ -20,7 +20,7 @@ const Show = () => {
                 fill
                 className='object-cover object-top rounded-3xl mt-5 shadow-lg'
             />
-            <button className='items-center cursor-pointer w-20 justify-center h-20 text-white rounded-full bg-[#003BF9] flex'>
+            <button className='items-center cursor-pointer z-10 w-20 justify-center h-20 text-white rounded-full bg-[#003BF9] flex'>
                 <Image
                     src="/play.svg"
                     alt="play"

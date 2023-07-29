@@ -1,4 +1,4 @@
-import { Intro, Niveaux, Show } from '@/components'
+import { Classement, Intro, Niveaux, Show, Testimonials } from '@/components'
 import Image from 'next/image'
 
 export default function Home() {
@@ -7,6 +7,8 @@ export default function Home() {
       <Intro />
       <Niveaux />
       <Show />
+      <Classement />
+      <Testimonials />
     </>
   )
 }
