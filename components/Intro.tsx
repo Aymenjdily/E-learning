@@ -13,7 +13,7 @@ const Intro = () => {
                 </h1>
                 <p className="my-8 leading-relaxed text-gray-600">Accédez à un système d'apprentissage en ligne et à des ressources pour enrichir vos connaissances.</p>
                 <Link
-                    href="/signup/etudiant"
+                    href="https://e-learning-app-five.vercel.app/signup/etudiant"
                 >
                     <CustomButton
                         title="Devenir Etudiant"

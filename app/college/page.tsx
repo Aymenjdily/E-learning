@@ -35,11 +35,15 @@ const collége = () => {
           <p className='text-gray-500'>
             Développez vos compétences et votre savoir-faire au collège grâce à notre plateforme de cours complémentaires. 
           </p>
-          <CustomButton
-            title="Devenir Etudiant"
-            bgColor="bg-[#003BF9] mt-5"
-            textColor="text-white"
-          />
+          <Link
+            href="https://e-learning-app-five.vercel.app/signup/etudiant"
+          >
+            <CustomButton
+              title="Devenir Etudiant"
+              bgColor="bg-[#003BF9] mt-5"
+              textColor="text-white"
+            />
+          </Link>
           <Image
             src="/cercles.png"
             alt="cercles"

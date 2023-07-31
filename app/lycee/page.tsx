@@ -35,11 +35,15 @@ const Lycee = () => {
                 <p className='text-gray-500'>
                     Préparez-vous pour l'avenir dès maintenant en explorant nos cours supplémentaires conçus spécialement pour les lycéens ambitieux. 
                 </p>
-                <CustomButton
-                    title="Devenir Etudiant"
-                    bgColor="bg-[#003BF9] mt-5"
-                    textColor="text-white"
-                />
+                <Link
+                    href="https://e-learning-app-five.vercel.app/signup/etudiant"
+                >
+                    <CustomButton
+                        title="Devenir Etudiant"
+                        bgColor="bg-[#003BF9] mt-5"
+                        textColor="text-white"
+                    />
+                </Link>
                 <Image
                     src="/cercles.png"
                     alt="cercles"

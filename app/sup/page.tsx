@@ -35,11 +35,15 @@ const Sup = () => {
                     <p className='text-gray-500'>
                         Explorez des sujets passionnants et approfondissez vos connaissances dans votre domaine d'études supérieures grâce à notre plateforme de cours complémentaires. 
                     </p>
-                    <CustomButton
-                        title="Devenir Etudiant"
-                        bgColor="bg-[#003BF9] mt-5"
-                        textColor="text-white"
-                    />
+                    <Link
+                        href="https://e-learning-app-five.vercel.app/signup/etudiant"
+                    >
+                        <CustomButton
+                            title="Devenir Etudiant"
+                            bgColor="bg-[#003BF9] mt-5"
+                            textColor="text-white"
+                        />
+                    </Link>
                     <Image
                         src="/cercles.png"
                         alt="cercles"
