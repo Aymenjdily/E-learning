@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { CustomButton } from '.'
+import Link from 'next/link'
 
 const Intro = () => {
   return (
@@ -11,10 +12,15 @@ const Intro = () => {
                     Votre <span className='text-[#003BF9]'>Réussite Académique</span> Commence Par Ici!
                 </h1>
                 <p className="my-8 leading-relaxed text-gray-600">Accédez à un système d'apprentissage en ligne et à des ressources pour enrichir vos connaissances.</p>
-                <CustomButton
-                    title="Devenir Etudiant"
-                    bgColor="bg-[#003BF9]"
-                />
+                <Link
+                    href="/signup/etudiant"
+                >
+                    <CustomButton
+                        title="Devenir Etudiant"
+                        bgColor="bg-[#003BF9]"
+                        textColor="text-white"
+                    />
+                </Link>
                 <div className='flex flex-wrap sm:justify-start justify-center items-center gap-8 mt-12'>
                     <div className='flex items-center space-x-3'>
                         <Image

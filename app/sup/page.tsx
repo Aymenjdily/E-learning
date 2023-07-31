@@ -38,6 +38,7 @@ const Sup = () => {
                     <CustomButton
                         title="Devenir Etudiant"
                         bgColor="bg-[#003BF9] mt-5"
+                        textColor="text-white"
                     />
                     <Image
                         src="/cercles.png"
@@ -55,22 +56,26 @@ const Sup = () => {
                 <div className='flex flex-row flex-wrap items-center justify-center mt-8 gap-3'>
                     <CustomButton
                         title="Ecoles D’ingenieurie"
-                        bgColor={`${active === 8 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 8 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 8 ? "text-white": "text-black"}`}
                         onClick={() => setActive(8)}
                     />
                     <CustomButton
                         title="Facultés"
-                        bgColor={`${active === 7 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 7 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 7 ? "text-white": "text-black"}`}
                         onClick={() => setActive(7)}
                     />
                     <CustomButton
                         title="EST-BTS"
-                        bgColor={`${active === 5 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 5 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 5 ? "text-white": "text-black"}`}
                         onClick={() => setActive(5)}
                     />
                     <CustomButton
                         title="CPGE"
-                        bgColor={`${active === 6 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 6 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 6 ? "text-white": "text-black"}`}
                         onClick={() => setActive(6)}
                     />
                 </div>
@@ -82,22 +87,26 @@ const Sup = () => {
                 <div className='flex flex-row flex-wrap items-center justify-center my-8 gap-3'>
                     <CustomButton
                         title="SMP"
-                        bgColor={`${active === 1 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 1 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 1 ? "text-white": "text-black"}`}
                         onClick={() => setActive(1)}
                     />
                     <CustomButton
                         title="BCG"
-                        bgColor={`${active === 2 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 2 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 2 ? "text-white": "text-black"}`}
                         onClick={() => setActive(2)}
                     />
                     <CustomButton
                         title="SMI"
-                        bgColor={`${active === 3 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 3 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 3 ? "text-white": "text-black"}`}
                         onClick={() => setActive(3)}
                     />
                     <CustomButton
                         title="CPGE"
-                        bgColor={`${active === 4 ? "bg-red-500 duration-300": "text-black"}`}
+                        bgColor={`${active === 4 ? "bg-red-500 duration-300": ""}`}
+                        textColor={`${active === 4 ? "text-white": "text-black"}`}
                         onClick={() => setActive(4)}
                     />
                 </div>
