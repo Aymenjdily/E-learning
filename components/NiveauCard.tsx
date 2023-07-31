@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const NiveauCard = ({ niveau } :any) => {
-    const { icon, title, description } = niveau
+    const { icon, title, description, link } = niveau
 
     return (
         <div className='lg:w-96 w-full flex flex-col space-y-5 shadow-xl p-8 rounded-xl'>
@@ -20,6 +21,12 @@ const NiveauCard = ({ niveau } :any) => {
             <p className='text-gray-500'>
                 {description}
             </p>
+            <Link
+                href={`/${link}`}
+                className='text-[#003BF9]'
+            >
+                Voir plus
+            </Link>
         </div>
     )
 }

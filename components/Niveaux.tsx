@@ -4,7 +4,7 @@ import NiveauCard from './NiveauCard'
 
 const Niveaux = () => {
   return (
-    <section className='flex flex-col items-center justify-center container md:px-0 px-5 mx-auto py-24'>
+    <section className='flex flex-col items-center justify-center container md:px-0 px-5 mx-auto py-24' id="niveaux">
         <p className='text-[#E20000] font-bold'>
             Notre Niveaux
         </p>
