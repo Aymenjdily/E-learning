@@ -9,6 +9,8 @@ import Testimonials from "./Testimonials";
 
 import CustomButton from "./CustomButton";
 
+import TeacherSignupForm from "./shared/TeacherSignupForm";
+
 export {
     Navbar,
     Intro,
@@ -17,5 +19,6 @@ export {
     Show,
     Classement,
     Testimonials,
-    Footer
+    Footer,
+    TeacherSignupForm
 }

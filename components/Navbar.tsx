@@ -41,7 +41,7 @@ const Navbar = () => {
                             Se connecter
                         </Link>
                         <Link
-                            href="/signup"
+                            href="/signupTeacher"
                             className='text-[#003BF9] font-semibold bg-[#003BF933] px-3 py-2 rounded-xl border-2 border-[#003BF9] duration-300 hover:bg-[#003BF9] hover:text-white'
                         >
                             Devenir enseignant

@@ -16,3 +16,6 @@
   }
 }
 
+.blue-background {
+  background: linear-gradient(180deg, #003BF9 34.21%, rgba(0, 59, 249, 0) 199.95%);
+}
