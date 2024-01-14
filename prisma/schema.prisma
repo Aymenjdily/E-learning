@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id             String @id @default(auto()) @map("_id") @db.ObjectId
+  email          String @unique
+  hashedPassword String
+  phone          String
+  image          String
+}
+
+model Teacher {
+  id             String      @id @default(auto()) @map("_id") @db.ObjectId
+  firstName      String
+  lastName       String
+  email          String      @unique
+  hashedPassword String
+  phone          String
+  resume         String
+  photo          String
+  level          String[]
+  subject        String[]
+  isActive       Boolean     @default(true)
+  classRooms     ClassRoom[]
+}
+
+model Student {
+  id          String     @id @default(auto()) @map("_id") @db.ObjectId
+  firstName   String
+  lastName    String
+  email       String     @unique
+  photo       String
+  level       String
+  subject     String[]
+  isActive    Boolean    @default(true)
+  classRoomId String? @db.ObjectId
+  classRoom   ClassRoom? @relation(fields: [classRoomId], references: [id])
+}
+
+model ClassRoom {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  subject   String
+  name      String
+  teacher   Teacher   @relation(fields: [teacherId], references: [id])
+  teacherId String    @db.ObjectId
+  students  Student[]
+  isActive  Boolean   @default(true)
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { CustomButton } from '.'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const Intro = () => {
   return (

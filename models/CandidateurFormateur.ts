@@ -18,7 +18,7 @@ const CandidateurFormateurSchema = new Schema({
     required: [true, 'phone is required.'],
   },
   level: {
-    type: String,
+    type: [String],
     required: [true, 'level is required.'],
   },
   subject: {
